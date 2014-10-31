@@ -91,22 +91,6 @@
         }
 
         /**
-         * Factory method, return an instance of this
-         * class bound to the supplied table name.
-         *
-         * A repeat of content in parent::for_table, so that
-         * created class is ORMWrapper, not ORM
-         *
-         * @param  string $table_name
-         * @param  string $connection_name
-         * @return ORMWrapper
-         */
-        public static function for_table($table_name, $connection_name = parent::DEFAULT_CONNECTION) {
-            self::_setup_db($connection_name);
-            return new self($table_name, array(), $connection_name);
-        }
-
-        /**
          * Method to create an instance of the model class
          * associated with this wrapper and populate
          * it with the supplied Idiorm instance.
