@@ -1,5 +1,5 @@
 {
-    "name": "j4mie/paris",
+    "name": "qyanu/parisorm",
     "type": "library",
     "description": "A lightweight Active Record implementation for PHP5, built on top of Idiorm",
     "keywords": ["paris", "orm", "active record", "model"],
@@ -35,9 +35,20 @@
     ],
     "require": {
         "php": ">=5.2.0",
-        "j4mie/idiorm": "1.5.*"
+        "qyanu/idiorm": "dev-devmsg"
     },
     "autoload": {
-        "classmap": ["paris.php"]
-    }
+        "classmap": ["paris.php"],
+        "psr-0": { "": "src/" }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/qyanu/idiorm"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/qyanu/parisorm"
+        }
+    ]
 }
