@@ -38,7 +38,6 @@
         "qyanu/idiorm": "dev-devmsg"
     },
     "autoload": {
-        "classmap": ["paris.php"],
         "psr-0": { "": "src/" }
     },
     "repositories": [
