@@ -126,10 +126,11 @@ class ORMWrapper extends ORM {
      * @return Array
      */
     public function find_many() {
-        return parent::find_many();
-        foreach($results as $key => $result) {
-            $results[$key] = $this->_create_model_instance($result);
+        $results = parent::find_many();
+        foreach($results as $key => &$result) {
+            $result = $this->_create_model_instance($result);
         }
+        unset($result);
         return $results;
     }
 
