@@ -35,7 +35,7 @@
     ],
     "require": {
         "php": ">=5.2.0",
-        "qyanu/idiorm": "dev-devmsg"
+        "oeamtc/msg-idiorm": "dev-devmsg@dev"
     },
     "autoload": {
         "psr-0": { "": "src/" }
@@ -43,11 +43,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/qyanu/idiorm"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/qyanu/parisorm"
+            "url": "gitolite3@office.pogner.at:oeamtc/msg-idiorm"
         }
     ]
 }
