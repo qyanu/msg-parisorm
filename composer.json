@@ -1,5 +1,5 @@
 {
-    "name": "qyanu/parisorm",
+    "name": "qyanu/msg-parisorm",
     "type": "library",
     "description": "A lightweight Active Record implementation for PHP5, built on top of Idiorm",
     "keywords": ["paris", "orm", "active record", "model"],
@@ -35,7 +35,7 @@
     ],
     "require": {
         "php": ">=5.2.0",
-        "oeamtc/msg-idiorm": "dev-devmsg@dev"
+        "qyanu/msg-idiorm": "dev-master"
     },
     "autoload": {
         "psr-0": { "": "src/" }
@@ -43,7 +43,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "gitolite3@office.pogner.at:oeamtc/msg-idiorm"
+            "url": "https://github.com/qyanu/msg-idiorm"
         }
     ]
 }
