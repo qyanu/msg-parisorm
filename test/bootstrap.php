@@ -1,7 +1,6 @@
 <?php
 
-require_once dirname(__FILE__) . '/idiorm.php';
-require_once dirname(__FILE__) . "/../paris.php";
+require_once dirname(__FILE__) . '/../vendor/autoload.php';
 
 /**
  *
@@ -13,7 +12,9 @@ class MockPDOStatement extends PDOStatement {
    private $current_row = 0;
    
    public function __construct() {}
-   public function execute($params = array()) {}
+   public function execute($params = array()) {
+      return true;
+   }
    
    /**
     * Return some dummy data

@@ -58,7 +58,7 @@ class ParisTest53 extends PHPUnit_Framework_TestCase {
 
         Model::$short_table_names = true;
         MustUseGlobalNamespaceConfig::find_many();
-        $expected = 'SELECT * FROM `must_use_global_namespace_config`';
+        $expected = 'SELECT * FROM `paris_tests_must_use_global_namespace_config`';
         $this->assertEquals($expected, ORM::get_last_query());
 
         Model::$short_table_names = false;
