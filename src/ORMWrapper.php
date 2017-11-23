@@ -47,6 +47,16 @@
  * You shouldn't need to interact with this class
  * directly. It is used internally by the Model base
  * class.
+ *
+ *
+ * The methods documented below are magic methods that conform to PSR-1.
+ * This documentation exposes these methods to doc generators and IDEs.
+ * @see http://www.php-fig.org/psr/psr-1/
+ *
+ * @method void setClassName($class_name)
+ * @method static \ORMWrapper forTable($table_name, $connection_name = parent::DEFAULT_CONNECTION)
+ * @method \Model findOne($id=null)
+ * @method Array|\IdiormResultSet findMany()
  */
 class ORMWrapper extends ORM {
 
@@ -139,7 +149,7 @@ class ORMWrapper extends ORM {
      * empty instance of the class associated with
      * this wrapper instead of the raw ORM class.
      *
-     *  return ORMWrapper|bool
+     * @return ORMWrapper|bool
      */
     public function create($data=null) {
         return $this->_create_model_instance(parent::create($data));
